@@ -14,6 +14,8 @@
     - 提供用于加密、密钥生成和协商以及 Message Authentication Code（MAC）算法的框架和实现。
     - 对对称、不对称、块和流密码的加密支持，它还支持安全流和密封的对象。它不对外出口，用它开发完成封装后将无法调用。
 
+
+
 ### Reference
 
 - [加密与安全](https://www.liaoxuefeng.com/wiki/1252599548343744/1255943717668160)
@@ -27,3 +29,9 @@
 - [让你彻底理解Base64算法（Base64是什么，Base64解决什么问题，Base64字符串末尾的=是什么）](https://zhuanlan.zhihu.com/p/384238870)
 
 - [java security浅谈](https://blog.csdn.net/hyEnA_Tiger/article/details/78407138?locationNum=9&fps=1)
+
+- [Java Cryptography Architecture (JCA) Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#ProviderArch)
+
+- [Java Cryptography Architecture
+Standard Algorithm Name Documentation for JDK 8](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html)
+

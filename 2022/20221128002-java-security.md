@@ -7,6 +7,12 @@
     - Hmac算法总是和某种哈希算法配合起来用,例如，使用MD5算法对应的就是 HmacMD5;
     - HmacMD5、HmacSHA1、HmacSHA128、HmacSHA256、HmacSHA384、Hmac512;
 
+- Java Cryptography Architecture (JCA) 
+    - 用于访问和开发 Java 平台密码功能的构架;
+    - 包括用于数字签名和报文摘要的 API
+- JCE（Java Cryptography Extension）
+    - 提供用于加密、密钥生成和协商以及 Message Authentication Code（MAC）算法的框架和实现。
+    - 对对称、不对称、块和流密码的加密支持，它还支持安全流和密封的对象。它不对外出口，用它开发完成封装后将无法调用。
 
 ### Reference
 
@@ -19,3 +25,5 @@
 - [Java Cryptography Architecture (JCA) Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/crypto/CryptoSpec.html#ProviderArch)
 
 - [让你彻底理解Base64算法（Base64是什么，Base64解决什么问题，Base64字符串末尾的=是什么）](https://zhuanlan.zhihu.com/p/384238870)
+
+- [java security浅谈](https://blog.csdn.net/hyEnA_Tiger/article/details/78407138?locationNum=9&fps=1)

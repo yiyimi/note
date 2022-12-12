@@ -35,3 +35,8 @@
 - [Java Cryptography Architecture
 Standard Algorithm Name Documentation for JDK 8](https://docs.oracle.com/javase/8/docs/technotes/guides/security/StandardNames.html)
 
+- [云服务AppId或AppKey和AppSecret生成与使用](https://houxian1103.blog.csdn.net/article/details/111662511)
+
+- [Hutool-crypto加密工具](https://blog.csdn.net/qq_45246098/article/details/123065390)
+
+- [java随机生成字符串的方法（三种）](https://blog.csdn.net/cpa_821/article/details/85054198)

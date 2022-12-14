@@ -6,6 +6,7 @@
     - 基于密钥的消息认证码算法，是一种更安全的消息摘要算法，用来作加密、数字签名、报文验证等;
     - Hmac算法总是和某种哈希算法配合起来用,例如，使用MD5算法对应的就是 HmacMD5;
     - HmacMD5、HmacSHA1、HmacSHA128、HmacSHA256、HmacSHA384、Hmac512;
+- SHA(Secure Hash Algorithm，安全散列算法)
 
 - Java Cryptography Architecture (JCA) 
     - 用于访问和开发 Java 平台密码功能的构架;
@@ -14,7 +15,14 @@
     - 提供用于加密、密钥生成和协商以及 Message Authentication Code（MAC）算法的框架和实现。
     - 对对称、不对称、块和流密码的加密支持，它还支持安全流和密封的对象。它不对外出口，用它开发完成封装后将无法调用。
 
+- [Java加密与解密](https://www.jianshu.com/p/213d69ac27b3)
+    - 其中的分类图：
+    ![加密算法分类图](./pic/4337070-b2a72bd716a079aa.webp)
 
+
+- Spring Security
+    - [Spring Security Crypto Module](https://docs.spring.io/spring-security/reference/features/integrations/cryptography.html)
+    - [Spring Security 加密模块](https://www.docs4dev.com/docs/zh/spring-security/4.2.10.RELEASE/reference/crypto.html)
 
 ### Reference
 

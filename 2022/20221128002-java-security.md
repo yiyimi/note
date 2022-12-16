@@ -50,3 +50,4 @@ Standard Algorithm Name Documentation for JDK 8](https://docs.oracle.com/javase/
 - [java随机生成字符串的方法（三种）](https://blog.csdn.net/cpa_821/article/details/85054198)
 
 - [加密解密（Hutool-crypto）](https://www.hutool.cn/docs/#/crypto/%E6%A6%82%E8%BF%B0)
+- [Java安全架构概览](https://blog.csdn.net/u012741741/article/details/79206758)

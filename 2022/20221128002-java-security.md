@@ -48,3 +48,5 @@ Standard Algorithm Name Documentation for JDK 8](https://docs.oracle.com/javase/
 - [Hutool-crypto加密工具](https://blog.csdn.net/qq_45246098/article/details/123065390)
 
 - [java随机生成字符串的方法（三种）](https://blog.csdn.net/cpa_821/article/details/85054198)
+
+- [加密解密（Hutool-crypto）](https://www.hutool.cn/docs/#/crypto/%E6%A6%82%E8%BF%B0)

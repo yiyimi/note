@@ -1,5 +1,7 @@
 # java.security
 
+- 加密算法
+
 - MAC(Message Authentication Code)
     - 消息认证码（带密钥的Hash函数），通信实体双方使用的一种验证机制
 - HMAC(Hash-based Message Authentication Code)

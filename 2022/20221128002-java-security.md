@@ -1,7 +1,49 @@
 # java.security
 
-- 加密算法
+- 使用密码学可以达到以下三个目的：
+数据保密性：防止用户的数据被窃取或泄露；
+数据完整性：防止用户传输的数据被篡改；
+身份验证：确保数据来源与合法的用户。
 
+- 加密算法
+    - 对称密码算法（Symmetric-key Algorithm）：
+        - 双方使用同一个密钥，既加密又解密，也称为单密钥加密;
+        - 优点：速度快，通常在消息发送方需要加密大量数据时使用，算法公开、计算量小、加密速度快、加密效率高。
+        - 缺点：数据传送前，发送方和接收方必须定好秘钥，都能保存好秘钥。如果一方的秘钥被泄露，那么加密信息就不安全了。
+        - 另外，每对用户每次使用对称加密算法时，都需要使用其他人不知道的唯一秘钥，这会使得收、发双方所拥有的钥匙数量巨大，密钥管理成为双方的负担。
+            在对称加密算法中常用的算法有：DES、AES等。
+            AES：密钥的长度可以为128、192和256位，也就是16个字节、24个字节和32个字节
+            DES：密钥的长度64位，8个字节。
+    - 非对称密码算法（Asymmetric-key Algorithm）：
+        - 一对密钥由公钥和私钥组成（可以使用很多对密钥）。私钥解密公钥加密数据，公钥解密私钥加密数据（私钥公钥可以互相加密解密）。
+        - 私钥只能由一方保管，不能外泄。公钥可以交给任何请求方。
+        - 在非对称加密算法中常用的算法有： 
+        - RSA、Elgamal、背包算法、Rabin、Diffie-Hellman、ECC（椭圆曲线加密算法）。
+            - 使用最广泛的是RSA算法，Elgamal是另一种常用的非对称加密算法。
+            缺点：速度较慢
+            优点：安全
+    - 摘要算法（Digest Algorithm）：
+    ```text
+    把任意长度的输入消息数据转化为固定长度的输出数据的一种密码算法，又称为 散列函数 、 哈希函数 、 杂凑函数 、单向函数 等。
+    摘要算法所产生的固定长度的输出数据称为 摘要值 、 散列值 或 哈希值 ，摘要算法无秘钥。
+    摘要算法 通常用来做数据完整性的判定，即对数据进行哈希计算然后比较 摘要值 是否一致。
+    摘要算法主要分为三大类：MD（Message Digest，消息摘要算法）、SHA-1（Secure Hash Algorithm，安全散列算法）和 MAC（Message Authentication Code，消息认证码算法）；另国密标准 SM3 也属于摘要算法。
+    MD 系列 主要包括 MD2、MD4、MD5
+    SHA 系列 主要包括 SHA-1、SHA-2 系列（SHA-1 的衍生算法，包含 SHA-224、SHA-256、SHA-384、SHA-512）
+    MAC 系列 主要包括 HmacMD5、HmacSHA1、HmacSHA256、HmacSHA384 和 HmacSHA512 算法
+    ```
+[所有加密算法及对称加密和非对称加密分类](https://www.cnblogs.com/barrywxx/p/8570735.html)
+[理解加密算法（一）——加密算法分类](https://zoucz.com/blog/2016/12/29/understand-crypto-1/)
+
+- 分类
+    - 按加密算法是否需要key被分为两类：
+        - 不基于key的有: Base64算法、MD5
+        - 基于key的有: 对称加密算法、非对称加密算法、数字签名算法、数字证书、HMAC、RC4(对称加密)
+    - 按加密算法是否可逆被分为两类：
+        - 单向加密算法(不可解密)：MD5、SHA、HMAC
+        - 非单项加密算法(可解密)：BASE64、对称加密算法、非对称加密算法、数字签名算法、数字证书
+
+- MD5(Message-Digest Algorithm 5，消息摘要算法版本5)
 - MAC(Message Authentication Code)
     - 消息认证码（带密钥的Hash函数），通信实体双方使用的一种验证机制
 - HMAC(Hash-based Message Authentication Code)
@@ -21,6 +63,8 @@
     - 其中的分类图：
     ![加密算法分类图](./pic/4337070-b2a72bd716a079aa.webp)
 
+ - MD5(Message-Digest Algorithm 5，消息摘要算法版本5)
+    - 应用于数据完整性校验、数据(消息)摘要、数据加密等
 
 - Spring Security
     - [Spring Security Crypto Module](https://docs.spring.io/spring-security/reference/features/integrations/cryptography.html)

@@ -25,6 +25,18 @@ Redisson不仅仅是一个Redis客户端，它还实现了很多具有分布式�
 
 Redisson中如何轻松操作Redis中的字符串(strings)、哈希(hashes)、列表(lists)、集合(sets)和有序集合(sorted sets)，以及如何使用Redisson实现的布隆过滤器和分布式锁，最后分析一下Redisson中分布式锁的解决方案。
 
+-----
+总结下来，Jedis 把 Redis 命令封装的非常全面，Lettuce 则进一步丰富了 Api，支持 Redis 各种高级特性。
+
+但是两者并没有进一步深化，只给了你操作 Redis 数据库的工具，而 Redisson 则是基于 Redis、Lua 和 Netty 建立起了一套的分布式解决方案，比如分布式锁的实现，分布式对象的操作等等。
+
+在实际使用过程中，Lettuce + Redisson组合使用的比较多，两者相铺相成。
+
+关于分布式锁实现的应用，生产环境推荐尽量采用单点环境来实现，基本上解决绝大部分的分布式锁问题，如果当前服务的环境确实很复杂，可以采用RedissonRedLock来实现。
+
+----
+
+
 追踪请求线程
 统计重入次数的能力
 不具备操作的原子性

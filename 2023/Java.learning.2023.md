@@ -20,4 +20,7 @@ public class WebMvcConfig extend DefaultWebMvcConfig {
 
 ## 2023-01-28 14:33:15
 
-- 
+- feignClient
+
+[高德地图接口-地理/逆地理编码](https://developer.amap.com/api/webservice/guide/api/georegeo)
+[feign使用网络代理发起请求](https://www.jianshu.com/p/9342d0ac5ce0)

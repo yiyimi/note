@@ -4,15 +4,39 @@
 
 在 Java 相关的后端服务开发中，会经常接触到多任务的动态创建、定时任务的实时执行。在多实例的业务场景中，java.util.Timer/SpringBoot @Scheduled注解均无法实现多任务的业务功能设计。这种情况下，则需要引入分布式的任务调度方案，解决定时任务的触发、调度及执行。
 
-## 分布式任务调度平台对比
+## 分布式任务调度
 
-- 分布式任务调度（Quartz、Elastic-Job和XXL-JOB）
+- 开源的分布式任务调度方案（Quartz、Elastic-Job和XXL-JOB）对比
+
+<style>
+table th:first-of-type {
+    width: 20%;
+}
+table th:nth-of-type(2) {
+    width: 20%;
+}
+table th:nth-of-type(3) {
+    width: 30%;
+}
+table th:nth-of-type(4) {
+    width: 30%;
+}
+</style>
+
+| 项目  | Quartz    | Elastic-Job   | XXL-JOB   |
+| :--- | :--- | :--- | :--- |
+| 依赖  | MySQL | jdk1.7+，zookeeper3.4.6+，maven3.0.4+，mesos | mysql，jdk1.7+，maven3.0+ |
+| 定时调度  | Cron  | Cron  | Cron  |
+| 管理界面  | 无    | 支持  | 支持（可查看历史记录、运行日志、监控大盘）|
+| 多语言    | Java  | Java、脚本任务    | Java、脚本任务    |
+| 报警监控  | 无    | 邮件  | 邮件  |
 
 - Quartz(Java作业调度框架)
 
 - cron表达式
 
-## 架构
+
+## xxl-job 架构设计
 
 
 [xxl-job架构图](xxl-job%E6%9E%B6%E6%9E%84%E5%9B%BE.png)
@@ -76,9 +100,12 @@ API列表：任务触发、任务终止、任务日志查询……等；
 此处 RESTful API 主要用于非Java语言定制个性化执行器使用，实现跨语言。除此之外，如果有需要通过API操作调度中心，可以个性化扩展 “调度中心 RESTful API” 并使用。
 
 
-## 思考
+## 业务场景应用
 
-- 动态创建任务实现方式：
+### 多任务的定时触发执行
+
+### 动态创建任务实现方式
+
     - 
 
 ## 参考

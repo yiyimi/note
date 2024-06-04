@@ -6,8 +6,8 @@
 
 ## reference
 
-- [infoQ-深入剖析 | Coroutine 原理](https://xie.infoq.cn/article/cef6d2931a54f85142d863db7)
+[infoQ-深入剖析 | Coroutine 原理](https://xie.infoq.cn/article/cef6d2931a54f85142d863db7)
 
-- [Java 21 正式 GA，虚拟线程真的来了](https://juejin.cn/post/7282949699177709587)
+[Java 21 正式 GA，虚拟线程真的来了](https://juejin.cn/post/7282949699177709587)
 
-- 
+[JDK21要来了，协程可以给Java带来什么](https://developer.aliyun.com/article/1290951)

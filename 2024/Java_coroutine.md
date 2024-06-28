@@ -17,3 +17,11 @@
 [JEP 444: Virtual Threads](https://openjdk.org/jeps/444)
 
 [美团架构师探秘Java生态系统，介绍JDK、JVM、JEP](https://cloud.tencent.com/developer/article/2144075)
+
+[自研Java协程在腾讯的生产实践](https://cloud.tencent.com/developer/article/1876644)
+
+[干货 | 携程基于Quasar协程的NIO实践](https://cloud.tencent.com/developer/article/1687443)
+
+[SpringBoot virtual threads vs webflux: Performance comparison for JWT verify and MySQL query](https://medium.com/deno-the-complete-reference/springboot-virtual-threads-vs-webflux-performance-comparison-for-jwt-verify-and-mysql-query-ff94cf251c2c)
+
+[Spring Boot虚拟线程与Webflux在JWT验证和MySQL查询上的性能比较](https://www.didispace.com/article/spring-boot/spring-boot-virtual-threads-vs-webflux.html)
